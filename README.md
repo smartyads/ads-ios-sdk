@@ -6,21 +6,15 @@
 
 ## Supported Ad formats
 
-<h1>320x50 Standard Banner <img style="border-width: 10px;" src="img/320x50.png" /></h1>
+<h1>320x50 Standard Banner <img src="img/320x50.png" /></h1>
 
+<h1>320x100 Large Banner <img src="img/320x100.png" /></h1>
 
-# 320x100 Large Banner
-<img src="img/320x100.png" border="1" />
+<h1>300x250 IAB Medium Rectangle <img src="img/300x250.png" /></h1>
 
-# 300x250 IAB Medium Rectangle
-<img src="img/300x250.png" border="1" />
+<h1>468x60 IAB Full-Size Banner <img src="img/468x60.png" /></h1>
 
-# 468x60 IAB Full-Size Banner
-<img src="img/468x60.png" border="1" />
-
-# 728x90 IAB Leaderboard
-<img src="img/728x90.png" border="1" />
-
+<h1>728x90 IAB Leaderboard <img src="img/728x90.png" /></h1>
 
 ## Requirements
 
