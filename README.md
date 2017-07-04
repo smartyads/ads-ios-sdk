@@ -6,8 +6,8 @@
 
 ## Supported Ad formats
 
-# 320x50 Standard Banner
-<img src="img/320x50.png" border="1" />
+<h1>320x50 Standard Banner <img style="border-width: 10px;" src="img/320x50.png" /></h1>
+
 
 # 320x100 Large Banner
 <img src="img/320x100.png" border="1" />
