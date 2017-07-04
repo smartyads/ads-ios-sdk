@@ -1,0 +1,1 @@
+# SmartyAds iOS SDK
