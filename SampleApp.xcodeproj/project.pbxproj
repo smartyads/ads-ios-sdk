@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF6650271F0BD6A000D2C171 /* SMAAttrObjectContainerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6650241F0BD6A000D2C171 /* SMAAttrObjectContainerModel.m */; };
+		DF66502A1F0BD6CF00D2C171 /* SMAAttrObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6650291F0BD6CF00D2C171 /* SMAAttrObjectModel.m */; };
+		DF66502D1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF66502C1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m */; };
+		DF6650411F0BE4A800D2C171 /* SmartyAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */; };
+		DF6650421F0BE4A800D2C171 /* SmartyAdsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF71E84F1F091FA10059E483 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF71E84D1F091FA10059E483 /* AppDelegate.m */; };
+		DF71E8501F091FA10059E483 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF71E84E1F091FA10059E483 /* main.m */; };
+		DFD577F21F09205100674709 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD577AB1F09205100674709 /* Crashlytics.framework */; };
+		DFD577F31F09205100674709 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD577AC1F09205100674709 /* Fabric.framework */; };
+		DFD577F41F09205100674709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD577AE1F09205100674709 /* Assets.xcassets */; };
+		DFD577F51F09205100674709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD577AF1F09205100674709 /* LaunchScreen.storyboard */; };
+		DFD577F61F09205100674709 /* smartyads_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DFD577B11F09205100674709 /* smartyads_logo.png */; };
+		DFD577F71F09205100674709 /* NSArray+SMAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577B71F09205100674709 /* NSArray+SMAExtensions.m */; };
+		DFD577F81F09205100674709 /* NSIndexPath+SMAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577BA1F09205100674709 /* NSIndexPath+SMAExtensions.m */; };
+		DFD577F91F09205100674709 /* NSString+SMAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577BD1F09205100674709 /* NSString+SMAExtensions.m */; };
+		DFD577FA1F09205100674709 /* UIColor+SMAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577C01F09205100674709 /* UIColor+SMAExtensions.m */; };
+		DFD577FB1F09205100674709 /* UINib+SMAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577C31F09205100674709 /* UINib+SMAExtensions.m */; };
+		DFD577FC1F09205100674709 /* UITableView+SMAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577C61F09205100674709 /* UITableView+SMAExtensions.m */; };
+		DFD577FD1F09205100674709 /* UIWindow+SMAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577C91F09205100674709 /* UIWindow+SMAExtensions.m */; };
+		DFD577FE1F09205100674709 /* SMADispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577CD1F09205100674709 /* SMADispatch.m */; };
+		DFD577FF1F09205100674709 /* SMASampleAppGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577D11F09205100674709 /* SMASampleAppGeneral.m */; };
+		DFD578031F09205100674709 /* SMAAdPresentationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577E21F09205100674709 /* SMAAdPresentationView.m */; };
+		DFD578041F09205100674709 /* SMAAdPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577E41F09205100674709 /* SMAAdPresentationViewController.m */; };
+		DFD578051F09205100674709 /* SMAAdPresentationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD577E51F09205100674709 /* SMAAdPresentationViewController.xib */; };
+		DFD578061F09205100674709 /* SMADictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD577EE1F09205100674709 /* SMADictionaryViewController.m */; };
+		DFD578071F09205100674709 /* SMADictionaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD577EF1F09205100674709 /* SMADictionaryViewController.xib */; };
+		DFD5783E1F0983A000674709 /* XCTestCase+SMABannerAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD578341F0983A000674709 /* XCTestCase+SMABannerAdView.m */; };
+		DFD5783F1F0983A000674709 /* SMABannerAdViewBaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD578371F0983A000674709 /* SMABannerAdViewBaseTestCase.m */; };
+		DFD578401F0983A000674709 /* SMABannerAdViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD578381F0983A000674709 /* SMABannerAdViewTestCase.m */; };
+		DFD578411F0983A000674709 /* SMAHTTPSAdRequestTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD578391F0983A000674709 /* SMAHTTPSAdRequestTestCase.m */; };
+		DFD578421F0983A000674709 /* SMATestResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD5783D1F0983A000674709 /* SMATestResponses.m */; };
+		DFD578431F09852100674709 /* SmartyAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFD5782C1F09833D00674709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF71E82A1F091E080059E483 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF71E8311F091E080059E483;
+			remoteInfo = SampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF6650431F0BE4A800D2C171 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF6650421F0BE4A800D2C171 /* SmartyAdsSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DF6650231F0BD6A000D2C171 /* SMAAttrObjectContainerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAAttrObjectContainerModel.h; sourceTree = "<group>"; };
+		DF6650241F0BD6A000D2C171 /* SMAAttrObjectContainerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAAttrObjectContainerModel.m; sourceTree = "<group>"; };
+		DF6650281F0BD6CF00D2C171 /* SMAAttrObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAAttrObjectModel.h; sourceTree = "<group>"; };
+		DF6650291F0BD6CF00D2C171 /* SMAAttrObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAAttrObjectModel.m; sourceTree = "<group>"; };
+		DF66502B1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAAttrObjectSectionModel.h; sourceTree = "<group>"; };
+		DF66502C1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAAttrObjectSectionModel.m; sourceTree = "<group>"; };
+		DF71E8321F091E080059E483 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF71E84C1F091FA10059E483 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF71E84D1F091FA10059E483 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF71E84E1F091FA10059E483 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFD577AB1F09205100674709 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		DFD577AC1F09205100674709 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		DFD577AE1F09205100674709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFD577B01F09205100674709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFD577B11F09205100674709 /* smartyads_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smartyads_logo.png; sourceTree = "<group>"; };
+		DFD577B61F09205100674709 /* NSArray+SMAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SMAExtensions.h"; sourceTree = "<group>"; };
+		DFD577B71F09205100674709 /* NSArray+SMAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SMAExtensions.m"; sourceTree = "<group>"; };
+		DFD577B91F09205100674709 /* NSIndexPath+SMAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+SMAExtensions.h"; sourceTree = "<group>"; };
+		DFD577BA1F09205100674709 /* NSIndexPath+SMAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+SMAExtensions.m"; sourceTree = "<group>"; };
+		DFD577BC1F09205100674709 /* NSString+SMAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SMAExtensions.h"; sourceTree = "<group>"; };
+		DFD577BD1F09205100674709 /* NSString+SMAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SMAExtensions.m"; sourceTree = "<group>"; };
+		DFD577BF1F09205100674709 /* UIColor+SMAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SMAExtensions.h"; sourceTree = "<group>"; };
+		DFD577C01F09205100674709 /* UIColor+SMAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SMAExtensions.m"; sourceTree = "<group>"; };
+		DFD577C21F09205100674709 /* UINib+SMAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINib+SMAExtensions.h"; sourceTree = "<group>"; };
+		DFD577C31F09205100674709 /* UINib+SMAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINib+SMAExtensions.m"; sourceTree = "<group>"; };
+		DFD577C51F09205100674709 /* UITableView+SMAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SMAExtensions.h"; sourceTree = "<group>"; };
+		DFD577C61F09205100674709 /* UITableView+SMAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SMAExtensions.m"; sourceTree = "<group>"; };
+		DFD577C81F09205100674709 /* UIWindow+SMAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+SMAExtensions.h"; sourceTree = "<group>"; };
+		DFD577C91F09205100674709 /* UIWindow+SMAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+SMAExtensions.m"; sourceTree = "<group>"; };
+		DFD577CC1F09205100674709 /* SMADispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMADispatch.h; sourceTree = "<group>"; };
+		DFD577CD1F09205100674709 /* SMADispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMADispatch.m; sourceTree = "<group>"; };
+		DFD577D01F09205100674709 /* SMASampleAppGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMASampleAppGeneral.h; sourceTree = "<group>"; };
+		DFD577D11F09205100674709 /* SMASampleAppGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMASampleAppGeneral.m; sourceTree = "<group>"; };
+		DFD577D31F09205100674709 /* SMAViewControllerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAViewControllerMacros.h; sourceTree = "<group>"; };
+		DFD577E11F09205100674709 /* SMAAdPresentationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAAdPresentationView.h; sourceTree = "<group>"; };
+		DFD577E21F09205100674709 /* SMAAdPresentationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAAdPresentationView.m; sourceTree = "<group>"; };
+		DFD577E31F09205100674709 /* SMAAdPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAAdPresentationViewController.h; sourceTree = "<group>"; };
+		DFD577E41F09205100674709 /* SMAAdPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAAdPresentationViewController.m; sourceTree = "<group>"; };
+		DFD577E51F09205100674709 /* SMAAdPresentationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMAAdPresentationViewController.xib; sourceTree = "<group>"; };
+		DFD577ED1F09205100674709 /* SMADictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMADictionaryViewController.h; sourceTree = "<group>"; };
+		DFD577EE1F09205100674709 /* SMADictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMADictionaryViewController.m; sourceTree = "<group>"; };
+		DFD577EF1F09205100674709 /* SMADictionaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMADictionaryViewController.xib; sourceTree = "<group>"; };
+		DFD578081F09211D00674709 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmartyAdsSDK.framework; sourceTree = "<group>"; };
+		DFD578271F09833D00674709 /* SampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD5782B1F09833D00674709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD578331F0983A000674709 /* XCTestCase+SMABannerAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+SMABannerAdView.h"; sourceTree = "<group>"; };
+		DFD578341F0983A000674709 /* XCTestCase+SMABannerAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+SMABannerAdView.m"; sourceTree = "<group>"; };
+		DFD578361F0983A000674709 /* SMABannerAdViewBaseTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMABannerAdViewBaseTestCase.h; sourceTree = "<group>"; };
+		DFD578371F0983A000674709 /* SMABannerAdViewBaseTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMABannerAdViewBaseTestCase.m; sourceTree = "<group>"; };
+		DFD578381F0983A000674709 /* SMABannerAdViewTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMABannerAdViewTestCase.m; sourceTree = "<group>"; };
+		DFD578391F0983A000674709 /* SMAHTTPSAdRequestTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAHTTPSAdRequestTestCase.m; sourceTree = "<group>"; };
+		DFD5783C1F0983A000674709 /* SMATestResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMATestResponses.h; sourceTree = "<group>"; };
+		DFD5783D1F0983A000674709 /* SMATestResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMATestResponses.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF71E82F1F091E080059E483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD577F21F09205100674709 /* Crashlytics.framework in Frameworks */,
+				DF6650411F0BE4A800D2C171 /* SmartyAdsSDK.framework in Frameworks */,
+				DFD577F31F09205100674709 /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD578241F09833D00674709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD578431F09852100674709 /* SmartyAdsSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF6650211F0BD6A000D2C171 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF6650221F0BD6A000D2C171 /* SMAAttrObjectContainerModel */,
+				DF6650251F0BD6A000D2C171 /* SMAAttrObjectModel */,
+				DF6650261F0BD6A000D2C171 /* SMAAttrObjectSectionModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF6650221F0BD6A000D2C171 /* SMAAttrObjectContainerModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF6650231F0BD6A000D2C171 /* SMAAttrObjectContainerModel.h */,
+				DF6650241F0BD6A000D2C171 /* SMAAttrObjectContainerModel.m */,
+			);
+			path = SMAAttrObjectContainerModel;
+			sourceTree = "<group>";
+		};
+		DF6650251F0BD6A000D2C171 /* SMAAttrObjectModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF6650281F0BD6CF00D2C171 /* SMAAttrObjectModel.h */,
+				DF6650291F0BD6CF00D2C171 /* SMAAttrObjectModel.m */,
+			);
+			path = SMAAttrObjectModel;
+			sourceTree = "<group>";
+		};
+		DF6650261F0BD6A000D2C171 /* SMAAttrObjectSectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF66502B1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.h */,
+				DF66502C1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m */,
+			);
+			path = SMAAttrObjectSectionModel;
+			sourceTree = "<group>";
+		};
+		DF71E8291F091E080059E483 = {
+			isa = PBXGroup;
+			children = (
+				DF71E8341F091E080059E483 /* SampleApp */,
+				DFD578281F09833D00674709 /* SampleAppTests */,
+				DFD577A91F09205100674709 /* Frameworks */,
+				DFD577AD1F09205100674709 /* Resources */,
+				DFD577B21F09205100674709 /* Source */,
+				DF71E8331F091E080059E483 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF71E8331F091E080059E483 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF71E8321F091E080059E483 /* SampleApp.app */,
+				DFD578271F09833D00674709 /* SampleAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF71E8341F091E080059E483 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				DFD578081F09211D00674709 /* Info.plist */,
+				DF71E84C1F091FA10059E483 /* AppDelegate.h */,
+				DF71E84D1F091FA10059E483 /* AppDelegate.m */,
+				DF71E84E1F091FA10059E483 /* main.m */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		DFD577A91F09205100674709 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFD5780C1F0928CC00674709 /* SmartyAdsSDK */,
+				DFD577AA1F09205100674709 /* Crashlytics */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFD577AA1F09205100674709 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577AB1F09205100674709 /* Crashlytics.framework */,
+				DFD577AC1F09205100674709 /* Fabric.framework */,
+			);
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		DFD577AD1F09205100674709 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577AE1F09205100674709 /* Assets.xcassets */,
+				DFD577AF1F09205100674709 /* LaunchScreen.storyboard */,
+				DFD577B11F09205100674709 /* smartyads_logo.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DFD577B21F09205100674709 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577B31F09205100674709 /* Lib */,
+				DF6650211F0BD6A000D2C171 /* Models */,
+				DFD577DE1F09205100674709 /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DFD577B31F09205100674709 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577B41F09205100674709 /* Categories */,
+				DFD577CA1F09205100674709 /* Classes */,
+				DFD577CE1F09205100674709 /* Utilities */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		DFD577B41F09205100674709 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577B51F09205100674709 /* NSArray */,
+				DFD577B81F09205100674709 /* NSIndexPath */,
+				DFD577BB1F09205100674709 /* NSString */,
+				DFD577BE1F09205100674709 /* UIColor */,
+				DFD577C11F09205100674709 /* UINib */,
+				DFD577C41F09205100674709 /* UITableView */,
+				DFD577C71F09205100674709 /* UIWindow */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DFD577B51F09205100674709 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577B61F09205100674709 /* NSArray+SMAExtensions.h */,
+				DFD577B71F09205100674709 /* NSArray+SMAExtensions.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		DFD577B81F09205100674709 /* NSIndexPath */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577B91F09205100674709 /* NSIndexPath+SMAExtensions.h */,
+				DFD577BA1F09205100674709 /* NSIndexPath+SMAExtensions.m */,
+			);
+			path = NSIndexPath;
+			sourceTree = "<group>";
+		};
+		DFD577BB1F09205100674709 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577BC1F09205100674709 /* NSString+SMAExtensions.h */,
+				DFD577BD1F09205100674709 /* NSString+SMAExtensions.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		DFD577BE1F09205100674709 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577BF1F09205100674709 /* UIColor+SMAExtensions.h */,
+				DFD577C01F09205100674709 /* UIColor+SMAExtensions.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		DFD577C11F09205100674709 /* UINib */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577C21F09205100674709 /* UINib+SMAExtensions.h */,
+				DFD577C31F09205100674709 /* UINib+SMAExtensions.m */,
+			);
+			path = UINib;
+			sourceTree = "<group>";
+		};
+		DFD577C41F09205100674709 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577C51F09205100674709 /* UITableView+SMAExtensions.h */,
+				DFD577C61F09205100674709 /* UITableView+SMAExtensions.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		DFD577C71F09205100674709 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577C81F09205100674709 /* UIWindow+SMAExtensions.h */,
+				DFD577C91F09205100674709 /* UIWindow+SMAExtensions.m */,
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		DFD577CA1F09205100674709 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577CB1F09205100674709 /* SMADispatch */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DFD577CB1F09205100674709 /* SMADispatch */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577CC1F09205100674709 /* SMADispatch.h */,
+				DFD577CD1F09205100674709 /* SMADispatch.m */,
+			);
+			path = SMADispatch;
+			sourceTree = "<group>";
+		};
+		DFD577CE1F09205100674709 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577CF1F09205100674709 /* SMASampleAppGeneral */,
+				DFD577D21F09205100674709 /* SMAViewControllerMacros */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DFD577CF1F09205100674709 /* SMASampleAppGeneral */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577D01F09205100674709 /* SMASampleAppGeneral.h */,
+				DFD577D11F09205100674709 /* SMASampleAppGeneral.m */,
+			);
+			path = SMASampleAppGeneral;
+			sourceTree = "<group>";
+		};
+		DFD577D21F09205100674709 /* SMAViewControllerMacros */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577D31F09205100674709 /* SMAViewControllerMacros.h */,
+			);
+			path = SMAViewControllerMacros;
+			sourceTree = "<group>";
+		};
+		DFD577DE1F09205100674709 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577DF1F09205100674709 /* SMAAdPresentationViewController */,
+				DFD577EC1F09205100674709 /* SMADictionartyViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DFD577DF1F09205100674709 /* SMAAdPresentationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577E01F09205100674709 /* SMAAdPresentationView */,
+				DFD577E31F09205100674709 /* SMAAdPresentationViewController.h */,
+				DFD577E41F09205100674709 /* SMAAdPresentationViewController.m */,
+				DFD577E51F09205100674709 /* SMAAdPresentationViewController.xib */,
+			);
+			path = SMAAdPresentationViewController;
+			sourceTree = "<group>";
+		};
+		DFD577E01F09205100674709 /* SMAAdPresentationView */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577E11F09205100674709 /* SMAAdPresentationView.h */,
+				DFD577E21F09205100674709 /* SMAAdPresentationView.m */,
+			);
+			path = SMAAdPresentationView;
+			sourceTree = "<group>";
+		};
+		DFD577EC1F09205100674709 /* SMADictionartyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DFD577ED1F09205100674709 /* SMADictionaryViewController.h */,
+				DFD577EE1F09205100674709 /* SMADictionaryViewController.m */,
+				DFD577EF1F09205100674709 /* SMADictionaryViewController.xib */,
+			);
+			path = SMADictionartyViewController;
+			sourceTree = "<group>";
+		};
+		DFD5780C1F0928CC00674709 /* SmartyAdsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */,
+			);
+			path = SmartyAdsSDK;
+			sourceTree = "<group>";
+		};
+		DFD578281F09833D00674709 /* SampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFD578311F0983A000674709 /* Categories */,
+				DFD578351F0983A000674709 /* TestCases */,
+				DFD5783A1F0983A000674709 /* Utilities */,
+				DFD5782B1F09833D00674709 /* Info.plist */,
+			);
+			path = SampleAppTests;
+			sourceTree = "<group>";
+		};
+		DFD578311F0983A000674709 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DFD578321F0983A000674709 /* XCTest */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DFD578321F0983A000674709 /* XCTest */ = {
+			isa = PBXGroup;
+			children = (
+				DFD578331F0983A000674709 /* XCTestCase+SMABannerAdView.h */,
+				DFD578341F0983A000674709 /* XCTestCase+SMABannerAdView.m */,
+			);
+			path = XCTest;
+			sourceTree = "<group>";
+		};
+		DFD578351F0983A000674709 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				DFD578361F0983A000674709 /* SMABannerAdViewBaseTestCase.h */,
+				DFD578371F0983A000674709 /* SMABannerAdViewBaseTestCase.m */,
+				DFD578381F0983A000674709 /* SMABannerAdViewTestCase.m */,
+				DFD578391F0983A000674709 /* SMAHTTPSAdRequestTestCase.m */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		DFD5783A1F0983A000674709 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DFD5783B1F0983A000674709 /* SMATestResponses */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DFD5783B1F0983A000674709 /* SMATestResponses */ = {
+			isa = PBXGroup;
+			children = (
+				DFD5783C1F0983A000674709 /* SMATestResponses.h */,
+				DFD5783D1F0983A000674709 /* SMATestResponses.m */,
+			);
+			path = SMATestResponses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF71E8311F091E080059E483 /* SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF71E8491F091E080059E483 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildPhases = (
+				DF71E82E1F091E080059E483 /* Sources */,
+				DF71E82F1F091E080059E483 /* Frameworks */,
+				DF71E8301F091E080059E483 /* Resources */,
+				DF13E4A01F0A131A00DF937B /* ShellScript */,
+				DF13E4A11F0A132500DF937B /* ShellScript */,
+				DF6650431F0BE4A800D2C171 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleApp;
+			productName = SampleApp;
+			productReference = DF71E8321F091E080059E483 /* SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFD578261F09833D00674709 /* SampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFD5782E1F09833D00674709 /* Build configuration list for PBXNativeTarget "SampleAppTests" */;
+			buildPhases = (
+				DFD578231F09833D00674709 /* Sources */,
+				DFD578241F09833D00674709 /* Frameworks */,
+				DFD578251F09833D00674709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFD5782D1F09833D00674709 /* PBXTargetDependency */,
+			);
+			name = SampleAppTests;
+			productName = SampleAppTests;
+			productReference = DFD578271F09833D00674709 /* SampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF71E82A1F091E080059E483 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SMA;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SmartyAds;
+				TargetAttributes = {
+					DF71E8311F091E080059E483 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 49DH34YDV8;
+						ProvisioningStyle = Automatic;
+					};
+					DFD578261F09833D00674709 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 49DH34YDV8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DF71E8311F091E080059E483;
+					};
+				};
+			};
+			buildConfigurationList = DF71E82D1F091E080059E483 /* Build configuration list for PBXProject "SampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF71E8291F091E080059E483;
+			productRefGroup = DF71E8331F091E080059E483 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF71E8311F091E080059E483 /* SampleApp */,
+				DFD578261F09833D00674709 /* SampleAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF71E8301F091E080059E483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD577F41F09205100674709 /* Assets.xcassets in Resources */,
+				DFD578071F09205100674709 /* SMADictionaryViewController.xib in Resources */,
+				DFD578051F09205100674709 /* SMAAdPresentationViewController.xib in Resources */,
+				DFD577F61F09205100674709 /* smartyads_logo.png in Resources */,
+				DFD577F51F09205100674709 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD578251F09833D00674709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF13E4A01F0A131A00DF937B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Frameworks/Crashlytics/Fabric.framework/run\" a3ebf16ec5101cade272a75e9beadeddfa842a00 9d9d54cc34875767448f5bda3f11269f24aa46e3901358028638e840e276a3a7";
+		};
+		DF13E4A11F0A132500DF937B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF71E82E1F091E080059E483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD577F81F09205100674709 /* NSIndexPath+SMAExtensions.m in Sources */,
+				DFD577F91F09205100674709 /* NSString+SMAExtensions.m in Sources */,
+				DFD577F71F09205100674709 /* NSArray+SMAExtensions.m in Sources */,
+				DF66502A1F0BD6CF00D2C171 /* SMAAttrObjectModel.m in Sources */,
+				DFD577FE1F09205100674709 /* SMADispatch.m in Sources */,
+				DFD577FD1F09205100674709 /* UIWindow+SMAExtensions.m in Sources */,
+				DFD577FC1F09205100674709 /* UITableView+SMAExtensions.m in Sources */,
+				DFD577FA1F09205100674709 /* UIColor+SMAExtensions.m in Sources */,
+				DFD578041F09205100674709 /* SMAAdPresentationViewController.m in Sources */,
+				DFD577FF1F09205100674709 /* SMASampleAppGeneral.m in Sources */,
+				DFD577FB1F09205100674709 /* UINib+SMAExtensions.m in Sources */,
+				DFD578031F09205100674709 /* SMAAdPresentationView.m in Sources */,
+				DF6650271F0BD6A000D2C171 /* SMAAttrObjectContainerModel.m in Sources */,
+				DF66502D1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m in Sources */,
+				DF71E8501F091FA10059E483 /* main.m in Sources */,
+				DF71E84F1F091FA10059E483 /* AppDelegate.m in Sources */,
+				DFD578061F09205100674709 /* SMADictionaryViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD578231F09833D00674709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD578411F0983A000674709 /* SMAHTTPSAdRequestTestCase.m in Sources */,
+				DFD578421F0983A000674709 /* SMATestResponses.m in Sources */,
+				DFD578401F0983A000674709 /* SMABannerAdViewTestCase.m in Sources */,
+				DFD5783F1F0983A000674709 /* SMABannerAdViewBaseTestCase.m in Sources */,
+				DFD5783E1F0983A000674709 /* XCTestCase+SMABannerAdView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFD5782D1F09833D00674709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF71E8311F091E080059E483 /* SampleApp */;
+			targetProxy = DFD5782C1F09833D00674709 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFD577AF1F09205100674709 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFD577B01F09205100674709 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF71E8471F091E080059E483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF71E8481F091E080059E483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF71E84A1F091E080059E483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49DH34YDV8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Crashlytics",
+					"$(PROJECT_DIR)/Frameworks/SmartyAdsSDK",
+				);
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartyads.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF71E84B1F091E080059E483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49DH34YDV8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Crashlytics",
+					"$(PROJECT_DIR)/Frameworks/SmartyAdsSDK",
+				);
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartyads.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DFD5782F1F09833D00674709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49DH34YDV8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/SmartyAdsSDK",
+				);
+				INFOPLIST_FILE = SampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartyads.SampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Debug;
+		};
+		DFD578301F09833D00674709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49DH34YDV8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/SmartyAdsSDK",
+				);
+				INFOPLIST_FILE = SampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartyads.SampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF71E82D1F091E080059E483 /* Build configuration list for PBXProject "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF71E8471F091E080059E483 /* Debug */,
+				DF71E8481F091E080059E483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF71E8491F091E080059E483 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF71E84A1F091E080059E483 /* Debug */,
+				DF71E84B1F091E080059E483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFD5782E1F09833D00674709 /* Build configuration list for PBXNativeTarget "SampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD5782F1F09833D00674709 /* Debug */,
+				DFD578301F09833D00674709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF71E82A1F091E080059E483 /* Project object */;
+}
