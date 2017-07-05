@@ -22,11 +22,23 @@ SmartyAdsSDK iOS in-app advertising framework requires _**iOS 8 or higher**_.
 
 ## Quick Jumps to
 
-## [Getting Started](https://github.com/smartyads/ads-ios-sdk/wiki#getting-started)
+## [Getting Started](#getting-started)
 
-## [Installation](https://github.com/smartyads/ads-ios-sdk/wiki#installation)
+## [Installation](#installation)
 
-## [Contact Us](https://github.com/smartyads/ads-ios-sdk/wiki#contact-us)
+## [Setup App Permissions](#setup-app-permissions)
+
+## [Initializing SmartyAdsSDK](#initializing-smartyadssDK)
+
+## [Supported Banner Types & Size Constants](#supported-banner-types-&-size-constants)
+
+## [Banner Load & Presentation](#banner-load-&-presentation)
+
+## [Driving SMABannerAdView](#driving-smabanneradview)
+
+## [Advanced Ad Lifecycle](#advanced-ad-lifecycle)
+
+## [Contact Us](#contact-us)
 
 ## Getting Started
 
