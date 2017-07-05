@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://github.com/SmartyAdsSDK/ads-ios-sdk"><img src="img/smartyads_logo.png" alt="SmartyAdsSDK for iOS" /></a><br /><br />
-	iOS SDK for in-app advertising with SmartyAds Supply Side Platform<br />
+	iOS SmartyAdsSDK for in-app advertising with SmartyAds Supply Side<br />
 </p>
 
 > This is a free Software Development Kit for the iOS application developers and publishers that works with [SmartyAds SSP](http://ssp.smartyads.com/login)
