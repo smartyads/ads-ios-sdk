@@ -1,15 +1,6 @@
 
 # Created by https://www.gitignore.io/api/xcode,objective-c,swift,c
 
-# Exclude archieved frameworks
-*/_Archive/*
-*/Output/SmartyAdsSDK-Debug-iphoneuniversal/*
-*/Output/SmartyAdsSDK-Release-iphoneuniversal/*
-
-# Exclude compiled SmartyAdsSDK framework
-SampleApp/Frameworks/
-
-
 ### C ###
 # Prerequisites
 *.d

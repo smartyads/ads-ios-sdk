@@ -2,7 +2,7 @@
 
 > This is a free Software Development Kit for the iOS application developers and publishers that works with [SmartyAds SSP](http://ssp.smartyads.com/login)
 
-> For getting Look & Feel experience for SmartyAdsSDK download our Sample App from App Store, search `SmartyAds Sample App` in the store.
+> For getting Look & Feel experience for SmartyAdsSDK download our Sample App from App Store, search `SmartyAds Sample App` in the store
 
 ## Supported Ad formats
 
@@ -20,7 +20,6 @@
 
 SmartyAdsSDK iOS in-app advertising framework requires _**iOS 8 or higher**_.
 
-
 ## Quick Jumps to
 
 ## [Getting Started](https://github.com/smartyads/ads-ios-sdk/wiki#getting-started)
@@ -29,17 +28,16 @@ SmartyAdsSDK iOS in-app advertising framework requires _**iOS 8 or higher**_.
 
 ## [Contact Us](https://github.com/smartyads/ads-ios-sdk/wiki#contact-us)
 
-
 ## Getting Started
 
 Just a few steps to start:
 
-1. Register your account on http://ssp.smartyads.com:
+1. Register your account on [SmartyAds SSP](http://ssp.smartyads.com/login)  (http://ssp.smartyads.com):
 ![Alt text](img/register-account.png "Register Account")
 
 2. Confirm your registration by following the confirmation link sent via email
 
-3. Create your first mobile inventory by clicking `Add Inventory`. Select `Mobile Application` in pop up. Fil all required fields. Inventory should be reviewed and approved before presenting ads
+3. Create your first mobile inventory by clicking `Add Inventory`. Select `Mobile Application` in pop up. Fill all required fields. Inventory should be reviewed and approved before presenting ads
 ![Alt text](img/create-inventory.png "Create Inventory")
 ![Alt text](img/add-inventory.png "Add Inventory")
 
@@ -52,15 +50,13 @@ Just a few steps to start:
 6. Please note the _**Placement ID**(e.g., ID#5884)_ below it's title. It will be used later in your code to initialize the ad container
 ![Alt text](img/summary-add-placement.png "Placement Summary")
 
-
 ## Installation
 
-* Download SmartyAdsSDK Cocoa Touch framework: https://github.com/smartyads/ads-ios-sdk/SampleApp/Frameworks/SmartyAdsSDK/SmartyAdsSDK.framework
+* Download SmartyAdsSDK Cocoa Touch framework: https://github.com/smartyads/ads-ios-sdk/SmartyAdsSDK/SmartyAdsSDK.framework
 
 * Place SmartyAdsSDK.framework in project's folder
 
 * In XCode, choose your app target: General -> Embedded Binaries -> Add SmartyAdsSDK.framework from the folder where it was placed on the previous step
-
 
 ## Setup App Permissions
 
@@ -70,8 +66,8 @@ Edit your Info.plist file to include the following properties:
   - NO - if your App is distributed free of any charges
 ![SMABundleIsPaid](img/location-when-in-use.png "SMABundleIsPaid")
 
-* *OPTIONAL* **Add Privacy - Location When In Use Usage Description** property with a String value: *[sspName] and/or the SDKs mediated by SmartyAds would like to access your location information* to allow [companyName] SDK use Device location for geo ad targeting:
-  * In XCode:
+* *OPTIONAL* **Add Privacy - Location When In Use Usage Description** property with a String value: *SmartyAds and/or the SDKs mediated by SmartyAds would like to access your location information* to allow [companyName] SDK use Device location for geo ad targeting:
+  * IN XCode:
   ![Location When In Use Description](img/location-when-in-use.png "Location When In Use Description")
   * OR by opening Info.plist and adding following properties:
   ```xml
@@ -87,11 +83,12 @@ Edit your Info.plist file to include the following properties:
   </plist>
   ```
 
-* Turn on **App Transport Security - Allows Arbitrary Loads** property - this option will allow ad content loading via **HTTP** protocol
-  * In XCode:
+* Turn on **App Transport Security** flag. This is needed for receiving Ad View content via HTTP protocol. Although this step is not required, without it, you won't be able to receive Ad View content from advertisers which use HTTP references for resources in its content:
+  * TURN ON **App Transport Security - Allows Arbitrary Loads** property - this option will allow ad content loading via **HTTP** protocol. In order to turn turn on this property do the following:
+    * IN XCode:
 ![Allow Arbitrary Loads](img/allow-arbitrary-loads.png "Allow Arbitrary Loads")
 
-  * OR by opening **Info.plist** and adding following properties:
+    * OR by opening **Info.plist** and adding following properties:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -107,17 +104,16 @@ Edit your Info.plist file to include the following properties:
 </dict>
 </plist>
 ```
-
-* Alternatively, you can use **App Transport Security - Allows Arbitrary Loads In Web Content ** property - this option will allow web content loading via **HTTP** protocol
-  * In XCode:
+  * ALTERNATIVELY, you can use **App Transport Security - Allows Arbitrary Loads In Web Content** property - this option will allow web content loading via **HTTP** protocol. Also add *ssp-nj.webtradehub.com* to **Exception Domains** dictionary. In this case you should also define `-shouldCheckAdLinks` for **SMABannerAdViewDelegate** to return NO, so that HTTP links check won't fail in general case. [More Details](https://github.com/smartyads/ads-ios-sdk/wiki#Advanced%20Ad%20Lifecycle):
+    * IN XCode:
 ![Allow Arbitrary Web Content](img/allow-arbitrary-web-content.png "Allow Web Content Loads")
-  * OR by opening **Info.plist** and adding following properties:
+    * OR by opening **Info.plist** and adding following properties:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  ..
+  ...
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -141,6 +137,8 @@ Edit your Info.plist file to include the following properties:
 In AppDelegate.m, `-application:didFinishLaunchingWithOptions:` method add following initializing code :
 ```objective-c
 #import <SmartyAdsSDK/SmartyAdsSDK.h>
+
+...
 
 - (BOOL)            application:(UIApplication *)application
   didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -176,12 +174,23 @@ Use `-init`,`-initWithFrame:`, or `-viewDidLoad` as a place for **adView** initi
 
 #### Important
 
-Do not forget to replace the **your_banner_id_here** with the placement ID from the Platform(Step 6 of the Getting Started section, e.g. @"5884") and **your_banner_size_here** accordingly
+Do not forget to replace the **your_banner_id_here** with the placement ID from the Platform(Step 6 of the Getting Started section, e.g. @"5884") and **your_banner_size_here** (e.g. kSMAAdSizeBanner) accordingly. See the sample code below:
 
-e.g.
 ```objective-c
 [[SMABannerAdView alloc] initWithPlacementId:**your_banner_id_here** size:**your_banner_size_here**];
 ```
+
+## Supported Banner Types & Size Constants
+
+SmartyAdsSDK supports five Banner Sizes. Your should choose size to pass in initialization(**your_banner_size_here**) accordingly to selected placement type on [SmartyAds SSP](http://ssp.smartyads.com/login):
+
+| Size, DPI| Type    | SmartyAdsSDK Size Constant |
+| :------------- | :------------- | :------------- |
+| 320x50       | Standard Banner       | kSMAAdSizeBanner       |
+| 320x100       | Large Banner       | kSMAAdSizeLargeBanner       |
+| 300x250       | IAB Medium Rectangle       | kSMAAdSizeIABMediumRectangle       |
+| 468x60      | IAB Full-Size Banner       | kSMAAdSizeIABFullSizeBanner      |
+| 728x90       | IAB Leaderboard      | kSMAAdSizeIABLeaderBoard       |
 
 ## Banner Load & Presentation
 
@@ -207,7 +216,6 @@ SMABannerAdView serves the following methods for Ad View management:
 
 * `-adConsumerInfo` - retrieved user info **NSDictionary** which is sent to SSP as parameters for ad request
 
-
 ## Advanced Ad Lifecycle
 
 In order to provide advanced Ad View logic you can use **SMABannerAdViewDelegate** delegation mechanism. In order to do so, set **delegate** property in **SMABannerAdView** instance:
@@ -229,8 +237,10 @@ In order to provide advanced Ad View logic you can use **SMABannerAdViewDelegate
 
   return self;
 }
+
 @end
 ```
+
 Now, you can define the following methods of **SMABannerAdViewDelegate** protocol:
 * `-adViewWillLoad:` - fires to notify of upcoming ad view load
 

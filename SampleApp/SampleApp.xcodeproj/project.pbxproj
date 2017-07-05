@@ -10,8 +10,8 @@
 		DF6650271F0BD6A000D2C171 /* SMAAttrObjectContainerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6650241F0BD6A000D2C171 /* SMAAttrObjectContainerModel.m */; };
 		DF66502A1F0BD6CF00D2C171 /* SMAAttrObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6650291F0BD6CF00D2C171 /* SMAAttrObjectModel.m */; };
 		DF66502D1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF66502C1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m */; };
-		DF6650411F0BE4A800D2C171 /* SmartyAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */; };
-		DF6650421F0BE4A800D2C171 /* SmartyAdsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF6650881F0D2C0500D2C171 /* SmartyAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6650661F0CFBF000D2C171 /* SmartyAdsSDK.framework */; };
+		DF6650891F0D2C0500D2C171 /* SmartyAdsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF6650661F0CFBF000D2C171 /* SmartyAdsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF71E84F1F091FA10059E483 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF71E84D1F091FA10059E483 /* AppDelegate.m */; };
 		DF71E8501F091FA10059E483 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF71E84E1F091FA10059E483 /* main.m */; };
 		DFD577F21F09205100674709 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD577AB1F09205100674709 /* Crashlytics.framework */; };
@@ -38,7 +38,6 @@
 		DFD578401F0983A000674709 /* SMABannerAdViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD578381F0983A000674709 /* SMABannerAdViewTestCase.m */; };
 		DFD578411F0983A000674709 /* SMAHTTPSAdRequestTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD578391F0983A000674709 /* SMAHTTPSAdRequestTestCase.m */; };
 		DFD578421F0983A000674709 /* SMATestResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD5783D1F0983A000674709 /* SMATestResponses.m */; };
-		DFD578431F09852100674709 /* SmartyAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DF6650431F0BE4A800D2C171 /* Embed Frameworks */ = {
+		DF66508A1F0D2C0500D2C171 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DF6650421F0BE4A800D2C171 /* SmartyAdsSDK.framework in Embed Frameworks */,
+				DF6650891F0D2C0500D2C171 /* SmartyAdsSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +71,7 @@
 		DF6650291F0BD6CF00D2C171 /* SMAAttrObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAAttrObjectModel.m; sourceTree = "<group>"; };
 		DF66502B1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAAttrObjectSectionModel.h; sourceTree = "<group>"; };
 		DF66502C1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAAttrObjectSectionModel.m; sourceTree = "<group>"; };
+		DF6650661F0CFBF000D2C171 /* SmartyAdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmartyAdsSDK.framework; sourceTree = "<group>"; };
 		DF71E8321F091E080059E483 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF71E84C1F091FA10059E483 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF71E84D1F091FA10059E483 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,7 +109,6 @@
 		DFD577EE1F09205100674709 /* SMADictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMADictionaryViewController.m; sourceTree = "<group>"; };
 		DFD577EF1F09205100674709 /* SMADictionaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMADictionaryViewController.xib; sourceTree = "<group>"; };
 		DFD578081F09211D00674709 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmartyAdsSDK.framework; sourceTree = "<group>"; };
 		DFD578271F09833D00674709 /* SampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD5782B1F09833D00674709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFD578331F0983A000674709 /* XCTestCase+SMABannerAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+SMABannerAdView.h"; sourceTree = "<group>"; };
@@ -128,7 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD577F21F09205100674709 /* Crashlytics.framework in Frameworks */,
-				DF6650411F0BE4A800D2C171 /* SmartyAdsSDK.framework in Frameworks */,
+				DF6650881F0D2C0500D2C171 /* SmartyAdsSDK.framework in Frameworks */,
 				DFD577F31F09205100674709 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +136,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFD578431F09852100674709 /* SmartyAdsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +179,14 @@
 			path = SMAAttrObjectSectionModel;
 			sourceTree = "<group>";
 		};
+		DF6650651F0CFBF000D2C171 /* SmartyAdsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DF6650661F0CFBF000D2C171 /* SmartyAdsSDK.framework */,
+			);
+			path = SmartyAdsSDK;
+			sourceTree = "<group>";
+		};
 		DF71E8291F091E080059E483 = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +222,7 @@
 		DFD577A91F09205100674709 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFD5780C1F0928CC00674709 /* SmartyAdsSDK */,
+				DF6650651F0CFBF000D2C171 /* SmartyAdsSDK */,
 				DFD577AA1F09205100674709 /* Crashlytics */,
 			);
 			path = Frameworks;
@@ -420,14 +426,6 @@
 			path = SMADictionartyViewController;
 			sourceTree = "<group>";
 		};
-		DFD5780C1F0928CC00674709 /* SmartyAdsSDK */ = {
-			isa = PBXGroup;
-			children = (
-				DFD5780D1F0928CC00674709 /* SmartyAdsSDK.framework */,
-			);
-			path = SmartyAdsSDK;
-			sourceTree = "<group>";
-		};
 		DFD578281F09833D00674709 /* SampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,7 +494,7 @@
 				DF71E8301F091E080059E483 /* Resources */,
 				DF13E4A01F0A131A00DF937B /* ShellScript */,
 				DF13E4A11F0A132500DF937B /* ShellScript */,
-				DF6650431F0BE4A800D2C171 /* Embed Frameworks */,
+				DF66508A1F0D2C0500D2C171 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -701,7 +699,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -776,6 +774,7 @@
 				DEVELOPMENT_TEAM = 49DH34YDV8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/Crashlytics",
 					"$(PROJECT_DIR)/Frameworks/SmartyAdsSDK",
 				);
@@ -794,6 +793,7 @@
 				DEVELOPMENT_TEAM = 49DH34YDV8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/Crashlytics",
 					"$(PROJECT_DIR)/Frameworks/SmartyAdsSDK",
 				);
