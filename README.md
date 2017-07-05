@@ -1,8 +1,14 @@
-# iOS SDK for in-app advertising with SmartyAds Supply Side Platform
+<p align="center">
+	<a href="https://github.com/SmartyAdsSDK/ads-ios-sdk"><img src="img/smartyads_logo.png" alt="SmartyAdsSDK for iOS" /></a><br /><br />
+	iOS SDK for in-app advertising with SmartyAds Supply Side Platform<br />
+</p>
+[platforms](https://img.shields.io/badge/platforms-iOS-lightgrey.svg)
 
 > This is a free Software Development Kit for the iOS application developers and publishers that works with [SmartyAds SSP](http://ssp.smartyads.com/login)
 
 > For getting Look & Feel experience for SmartyAdsSDK download our Sample App from App Store, search `SmartyAds Sample App` in the store
+
+
 
 ## Supported Ad formats
 
@@ -22,23 +28,23 @@ SmartyAdsSDK iOS in-app advertising framework requires _**iOS 8 or higher**_.
 
 ## Quick Jumps to
 
-## [Getting Started](#getting-started)
+[Getting Started](#getting-started)
 
-## [Installation](#installation)
+[Installation](#installation)
 
-## [Setup App Permissions](#setup-app-permissions)
+[Setup App Permissions](#setup-app-permissions)
 
-## [Initializing SmartyAdsSDK](#initializing-smartyadssDK)
+[Initializing SmartyAdsSDK](#initializing-smartyadssDK)
 
-## [Supported Banner Types & Size Constants](#supported-banner-types-&-size-constants)
+[Supported Banner Types & Size Constants](#supported-banner-types-&-size-constants)
 
-## [Banner Load & Presentation](#banner-load-&-presentation)
+[Banner Load & Presentation](#banner-load-&-presentation)
 
-## [Driving SMABannerAdView](#driving-smabanneradview)
+[Driving SMABannerAdView](#driving-smabanneradview)
 
-## [Advanced Ad Lifecycle](#advanced-ad-lifecycle)
+[Advanced Ad Lifecycle](#advanced-ad-lifecycle)
 
-## [Contact Us](#contact-us)
+[Contact Us](#contact-us)
 
 ## Getting Started
 
