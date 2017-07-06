@@ -33,11 +33,11 @@ SmartyAdsSDK iOS in-app advertising framework requires _**iOS 8 or higher**_.
 
 [Setup App Permissions](#setup-app-permissions)
 
-[Initializing SmartyAdsSDK](#initializing-smartyadssDK)
+[Initializing SmartyAdsSDK](#initializing-smartyadssdk)
 
-[Supported Banner Types & Size Constants](#supported-banner-types-&-size-constants)
+[Supported Banner Types & Size Constants](#supported-banner-types-and-size-constants)
 
-[Banner Load & Presentation](#banner-load-&-presentation)
+[Banner Load & Presentation](#banner-load-and-presentation)
 
 [Driving SMABannerAdView](#driving-smabanneradview)
 
@@ -197,7 +197,7 @@ Do not forget to replace the **your_banner_id_here** with the placement ID from 
 [[SMABannerAdView alloc] initWithPlacementId:**your_banner_id_here** size:**your_banner_size_here**];
 ```
 
-## Supported Banner Types & Size Constants
+## Supported Banner Types and Size Constants
 
 SmartyAdsSDK supports five Banner Sizes. Your should choose size to pass in initialization(**your_banner_size_here**) accordingly to selected placement type on [SmartyAds SSP](http://ssp.smartyads.com/login):
 
@@ -209,7 +209,7 @@ SmartyAdsSDK supports five Banner Sizes. Your should choose size to pass in init
 | 468x60      | IAB Full-Size Banner       | kSMAAdSizeIABFullSizeBanner      |
 | 728x90       | IAB Leaderboard      | kSMAAdSizeIABLeaderBoard       |
 
-## Banner Load & Presentation
+## Banner Load and Presentation
 
 In order to load and show banner, you should call `-load` method. Load should be called when view is already shown, so we are sure that ad will be shown to the actual user. The most optimal place is `-viewWillAppear` method:
 ```objective-c
