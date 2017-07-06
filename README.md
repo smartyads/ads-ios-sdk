@@ -1,29 +1,27 @@
 <p align="center">
-	<a href="https://github.com/SmartyAdsSDK/ads-ios-sdk"><img src="img/smartyads_logo.png" alt="SmartyAdsSDK for iOS" /></a><br /><br />
-	iOS SDK for in-app advertising with SmartyAds Supply Side Platform<br />
+	<a href="https://github.com/SmartyAdsSDK/ads-ios-sdk"><img src="img/smartyads_logo.png" alt="SmartyAdsSDK for iOS" /></a><br />
+	<br />
+	iOS SDK for in-app advertising with SmartyAds Supply Side Platform
+	<br />
 </p>
 
-> This is a free Software Development Kit for the iOS application developers and publishers that works with [SmartyAds SSP](http://ssp.smartyads.com/login)
+> This is a free Software Development Kit for the iOS application developers and publishers to monetize digital mobile inventory faster than the blink of an eye. SmartyAds SDK integrates with [SmartyAds SSP](http://ssp.smartyads.com/login),  a one single source of offerings tailored to publishers’ needs
 
-> For getting Look & Feel experience for SmartyAdsSDK download our Sample App from App Store, search `SmartyAdsApp` in the store
-
-
+> For getting Look & Feel experience for SmartyAdsSDK install our Sample App from App Store, search `SmartyAdsApp` in the store
 
 ## Supported Ad formats
 
-<h1>320x50 Standard Banner <img src="img/320x50.png" /></h1>
-
-<h1>320x100 Large Banner <img src="img/320x100.png" /></h1>
-
-<h1>300x250 IAB Medium Rectangle <img src="img/300x250.png" /></h1>
-
-<h1>468x60 IAB Full-Size Banner <img src="img/468x60.png" /></h1>
-
-<h1>728x90 IAB Leaderboard <img src="img/728x90.png" /></h1>
+| Format | Ad View |
+| :------------- | :------------- |
+| <h4>320x50 Standard Banner</h4>       | <img src="img/320x50.png" />|
+| <h4>320x100 Large Banner</h4>        | <img src="img/320x100.png" /> |
+| <h4>300x250 IAB Medium Rectangle</h4>        |<img src="img/300x250.png" />|
+| <h4>468x60 IAB Full-Size Banner</h4>        | <img src="img/468x60.png" /> |
+| <h4>728x90 IAB Leaderboard</h4>       | <img src="img/728x90.png" /> |
 
 ## Requirements
 
-SmartyAdsSDK iOS in-app advertising framework requires _**iOS 8 or higher**_.
+SmartyAdsSDK iOS in-app advertising framework requires _**iOS 8 and up**_.
 
 ## Quick Jumps to
 
@@ -49,22 +47,23 @@ SmartyAdsSDK iOS in-app advertising framework requires _**iOS 8 or higher**_.
 
 Just a few steps to start:
 
-1. Register your account on [SmartyAds SSP](http://ssp.smartyads.com/login)  (http://ssp.smartyads.com):
-![Alt text](img/register-account.png "Register Account")
+1. Register your account on [SmartyAds SSP](http://ssp.smartyads.com/login)  (http://ssp.smartyads.com)
 
 2. Confirm your registration by following the confirmation link sent via email
 
-3. Create your first mobile inventory by clicking `Add Inventory`. Select `Mobile Application` in pop up. Fill all required fields. Inventory should be reviewed and approved before presenting ads
+3. Create your first mobile inventory by clicking `Add Inventory`. Select `iOS Application` in pop up.
 ![Alt text](img/create-inventory.png "Create Inventory")
+
+4. Fill all required fields in `Add Inventory` form. Inventory should be reviewed and approved before presenting ads. Click `Save changes` for proceeding next
 ![Alt text](img/add-inventory.png "Add Inventory")
 
-4. After this, you will be granted access to create placements for your inventory, `+Banner` button should become clickable
+5. After this, you will be granted access to create placements for your inventory, `+Banner` button should become clickable
 ![Alt text](img/add-inventory-summary.png "Add Inventory Summary")
 
-5. Click on `+Banner`, add the targeting options, floor price and size of your placement, then `Save changes`
+6. Click on `+Banner`, add the targeting options, floor price and size of your placement, then click `Save changes`
 ![Alt text](img/add-placement.png "Add Placement")
 
-6. Please note the _**Placement ID**(e.g., ID#5884)_ below it's title. It will be used later in your code to initialize the ad container
+7. Please, note the _**Placement ID**(e.g., ID#5884)_ below it's title. It will be used later in your code to initialize the ad container
 ![Alt text](img/summary-add-placement.png "Placement Summary")
 
 ## Installation
@@ -73,7 +72,7 @@ Just a few steps to start:
 
 * Place SmartyAdsSDK.framework in project's folder
 
-* In XCode, choose your app target: General -> Embedded Binaries -> Add SmartyAdsSDK.framework from the folder where it was placed on the previous step
+* In XCode, choose your **App Target**: General -> Embedded Binaries -> Add SmartyAdsSDK.framework from the folder where it was placed on the previous step
 
 ## Setup App Permissions
 
