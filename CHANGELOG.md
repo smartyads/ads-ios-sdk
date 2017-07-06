@@ -1,4 +1,4 @@
-## Version 0.0.1 (July 5th, 2017)
+## Version 0.0.1 (July 6th, 2017)
 - **SmartyAds launches SmartyAdsSDK for iOS mobile advertising, solution that integrates iOS devices with SmartyAds SSP for retrieving and presenting ads **
 - **Features**
 - Support for Banner ads, Standard Banner, Large Banner, IAB Medium Rectangle, IAB Full-Size Banner, IAB Leaderboard

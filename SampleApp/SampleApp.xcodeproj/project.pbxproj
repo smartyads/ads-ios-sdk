@@ -10,10 +10,10 @@
 		DF6650271F0BD6A000D2C171 /* SMAAttrObjectContainerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6650241F0BD6A000D2C171 /* SMAAttrObjectContainerModel.m */; };
 		DF66502A1F0BD6CF00D2C171 /* SMAAttrObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6650291F0BD6CF00D2C171 /* SMAAttrObjectModel.m */; };
 		DF66502D1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF66502C1F0BD6DA00D2C171 /* SMAAttrObjectSectionModel.m */; };
-		DF6650881F0D2C0500D2C171 /* SmartyAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6650661F0CFBF000D2C171 /* SmartyAdsSDK.framework */; };
-		DF6650891F0D2C0500D2C171 /* SmartyAdsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF6650661F0CFBF000D2C171 /* SmartyAdsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF71E84F1F091FA10059E483 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF71E84D1F091FA10059E483 /* AppDelegate.m */; };
 		DF71E8501F091FA10059E483 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF71E84E1F091FA10059E483 /* main.m */; };
+		DF78D4951F0DEC5D008D01BF /* SmartyAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6650661F0CFBF000D2C171 /* SmartyAdsSDK.framework */; };
+		DF78D4961F0DEC5D008D01BF /* SmartyAdsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF6650661F0CFBF000D2C171 /* SmartyAdsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DFD577F21F09205100674709 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD577AB1F09205100674709 /* Crashlytics.framework */; };
 		DFD577F31F09205100674709 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD577AC1F09205100674709 /* Fabric.framework */; };
 		DFD577F41F09205100674709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD577AE1F09205100674709 /* Assets.xcassets */; };
@@ -51,13 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DF66508A1F0D2C0500D2C171 /* Embed Frameworks */ = {
+		DF78D4971F0DEC5E008D01BF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DF6650891F0D2C0500D2C171 /* SmartyAdsSDK.framework in Embed Frameworks */,
+				DF78D4961F0DEC5D008D01BF /* SmartyAdsSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,7 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD577F21F09205100674709 /* Crashlytics.framework in Frameworks */,
-				DF6650881F0D2C0500D2C171 /* SmartyAdsSDK.framework in Frameworks */,
+				DF78D4951F0DEC5D008D01BF /* SmartyAdsSDK.framework in Frameworks */,
 				DFD577F31F09205100674709 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,29 +485,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF71E8311F091E080059E483 /* SampleApp */ = {
+		DF71E8311F091E080059E483 /* SmartyAdsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF71E8491F091E080059E483 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildConfigurationList = DF71E8491F091E080059E483 /* Build configuration list for PBXNativeTarget "SmartyAdsApp" */;
 			buildPhases = (
 				DF71E82E1F091E080059E483 /* Sources */,
 				DF71E82F1F091E080059E483 /* Frameworks */,
 				DF71E8301F091E080059E483 /* Resources */,
 				DF13E4A01F0A131A00DF937B /* ShellScript */,
-				DF13E4A11F0A132500DF937B /* ShellScript */,
-				DF66508A1F0D2C0500D2C171 /* Embed Frameworks */,
+				DF78D4971F0DEC5E008D01BF /* Embed Frameworks */,
+				DF78D4981F0DF4D7008D01BF /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SampleApp;
+			name = SmartyAdsApp;
 			productName = SampleApp;
 			productReference = DF71E8321F091E080059E483 /* SampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DFD578261F09833D00674709 /* SampleAppTests */ = {
+		DFD578261F09833D00674709 /* SmartyAdsAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFD5782E1F09833D00674709 /* Build configuration list for PBXNativeTarget "SampleAppTests" */;
+			buildConfigurationList = DFD5782E1F09833D00674709 /* Build configuration list for PBXNativeTarget "SmartyAdsAppTests" */;
 			buildPhases = (
 				DFD578231F09833D00674709 /* Sources */,
 				DFD578241F09833D00674709 /* Frameworks */,
@@ -518,7 +518,7 @@
 			dependencies = (
 				DFD5782D1F09833D00674709 /* PBXTargetDependency */,
 			);
-			name = SampleAppTests;
+			name = SmartyAdsAppTests;
 			productName = SampleAppTests;
 			productReference = DFD578271F09833D00674709 /* SampleAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -559,8 +559,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF71E8311F091E080059E483 /* SampleApp */,
-				DFD578261F09833D00674709 /* SampleAppTests */,
+				DF71E8311F091E080059E483 /* SmartyAdsApp */,
+				DFD578261F09833D00674709 /* SmartyAdsAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -601,7 +601,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PROJECT_DIR}/Frameworks/Crashlytics/Fabric.framework/run\" a3ebf16ec5101cade272a75e9beadeddfa842a00 9d9d54cc34875767448f5bda3f11269f24aa46e3901358028638e840e276a3a7";
 		};
-		DF13E4A11F0A132500DF937B /* ShellScript */ = {
+		DF78D4981F0DF4D7008D01BF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -658,7 +658,7 @@
 /* Begin PBXTargetDependency section */
 		DFD5782D1F09833D00674709 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DF71E8311F091E080059E483 /* SampleApp */;
+			target = DF71E8311F091E080059E483 /* SmartyAdsApp */;
 			targetProxy = DFD5782C1F09833D00674709 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -781,7 +781,7 @@
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartyads.SampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartyads.smartyadsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -800,7 +800,7 @@
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartyads.SampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartyads.smartyadsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -851,7 +851,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF71E8491F091E080059E483 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+		DF71E8491F091E080059E483 /* Build configuration list for PBXNativeTarget "SmartyAdsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF71E84A1F091E080059E483 /* Debug */,
@@ -860,7 +860,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DFD5782E1F09833D00674709 /* Build configuration list for PBXNativeTarget "SampleAppTests" */ = {
+		DFD5782E1F09833D00674709 /* Build configuration list for PBXNativeTarget "SmartyAdsAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFD5782F1F09833D00674709 /* Debug */,
