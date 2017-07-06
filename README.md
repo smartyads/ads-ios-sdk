@@ -5,7 +5,7 @@
 
 > This is a free Software Development Kit for the iOS application developers and publishers that works with [SmartyAds SSP](http://ssp.smartyads.com/login)
 
-> For getting Look & Feel experience for SmartyAdsSDK download our Sample App from App Store, search `SmartyAds Sample App` in the store
+> For getting Look & Feel experience for SmartyAdsSDK download our Sample App from App Store, search `SmartyAdsApp` in the store
 
 
 
