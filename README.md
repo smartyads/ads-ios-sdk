@@ -7,8 +7,6 @@
 
 > This is a free Software Development Kit for the iOS application developers and publishers to monetize digital mobile inventory faster than the blink of an eye. SmartyAds SDK integrates with [SmartyAds SSP](http://ssp.smartyads.com/login),  a one single source of offerings tailored to publishers’ needs
 
-> For getting Look & Feel experience for SmartyAdsSDK install our Sample App from App Store, search `SmartyAdsApp` in the store
-
 ## Supported Ad formats
 
 | Format | Ad View |
