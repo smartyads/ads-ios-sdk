@@ -5,7 +5,9 @@
 	<br />
 </p>
 
-> This is a free Software Development Kit for the iOS application developers and publishers to monetize digital mobile inventory faster than the blink of an eye. SmartyAds SDK integrates with [SmartyAds SSP](http://ssp.smartyads.com/login),  a one single source of offerings tailored to publishers’ needs
+> This is a free Software Development Kit for the iOS application developers and publishers to monetize digital mobile inventory faster than the blink of an eye. SmartyAds SDK integrates with [SmartyAds SSP](http://ssp.smartyads.com/login), one single source of offerings tailored to publishers’ needs
+
+> In order to get Touch & Feel experience for our SDK, install and try our Sample App - **SmartyAdsApp**, which uses SmartyAds SDK as a framework for loading and presenting ads. SmartyAdsApp is available in the [App Store](https://itunes.apple.com/us/app/smartyadsapp/id1256141112?ls=1&mt=8). Its source can be found in this repo
 
 ## Supported Ad formats
 
@@ -45,7 +47,7 @@ SmartyAdsSDK iOS in-app advertising framework requires _**iOS 8 and up**_.
 
 Just a few steps to start:
 
-1. Register your account on [SmartyAds SSP](http://ssp.smartyads.com/login)  (http://ssp.smartyads.com)
+1. Register your account on [SmartyAds SSP - http://ssp.smartyads.com/login](http://ssp.smartyads.com/login)
 
 2. Confirm your registration by following the confirmation link sent via email
 
@@ -148,7 +150,7 @@ Edit your Info.plist file to include the following properties:
 
 ## Initializing SmartyAdsSDK
 
-In AppDelegate.m, `-application:didFinishLaunchingWithOptions:` method add following initializing code :
+In AppDelegate.m, `-application:didFinishLaunchingWithOptions:` method add following initializing code:
 ```objective-c
 #import <SmartyAdsSDK/SmartyAdsSDK.h>
 
